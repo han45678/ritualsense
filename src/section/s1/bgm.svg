@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+   <defs>
+    <style>
+      .st0 {
+        fill: #3baf1e;
+      }
+
+      .st1 {
+        fill: url(#_未命名漸層);
+      }
+
+      .st2 {
+        fill: url(#_未命名漸層_2);
+      }
+
+      .st3 {
+        fill: #00915a;
+      }
+
+      .st4 {
+        fill: #50e6b4;
+        mix-blend-mode: multiply;
+      }
+
+      .st4, .st5 {
+        isolation: isolate;
+      }
+
+      .st6 {
+        fill: url(#_未命名漸層_5);
+      }
+
+      .st7 {
+        fill: #44af35;
+      }
+
+      .st8 {
+        fill: url(#_未命名漸層_3);
+      }
+
+      .st9 {
+        fill: url(#_未命名漸層_4);
+        transform: translateY(-60px);
+        animation: an 5s .5s infinite alternate ;
+      }
+      
+      @keyframes an {
+        to {
+        transform: translate(0)
+        }
+      }
+    </style>
+    <linearGradient id="_未命名漸層" data-name="未命名漸層" x1="1913.8" y1="1090.7" x2="6.2" y2="-10.7" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#009686"/>
+      <stop offset=".8" stop-color="#3ca92f"/>
+      <stop offset="1" stop-color="#5eb400"/>
+    </linearGradient>
+    <linearGradient id="_未命名漸層_2" data-name="未命名漸層 2" x1="1687.9" y1="232.8" x2="1718.8" y2="232.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff000"/>
+      <stop offset=".6" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffe100"/>
+    </linearGradient>
+    <linearGradient id="_未命名漸層_3" data-name="未命名漸層 3" x1="270.5" y1="453.4" x2="360.5" y2="453.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff000"/>
+      <stop offset=".6" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffe100"/>
+    </linearGradient>
+    <linearGradient id="_未命名漸層_4" data-name="未命名漸層 4" x1="1129.6" y1="205.2" x2="1210.8" y2="205.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff000"/>
+      <stop offset=".6" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffe100"/>
+    </linearGradient>
+    <linearGradient id="_未命名漸層_5" data-name="未命名漸層 5" x1="1778.5" y1="897.8" x2="1812.2" y2="897.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff000"/>
+      <stop offset=".6" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffe100"/>
+    </linearGradient>
+  </defs>
+      <path class="st1" d="M0,1080h1920V0H0v1080Z"/>
+      <path class="st3" d="M749.7,1080h399.6V0h770.7"/>
+      <path class="st4" d="M270.5,0h878.8L272,811,270.5,0ZM1920,471.5l-768.4,1.3,768.4,816.6V471.5Z"/>
+      <path class="st0" d="M1889.1,0h30.9l-30.8,28.5V0h0Z"/>
+      <path class="st7" d="M1083.7,67.4h30.9l-30.8,28.5v-28.5h0Z"/>
+      <path class="st2" d="M1687.9,218.5h30.9l-30.8,28.5v-28.5h0Z"/>
+      <path class="st8" d="M270.5,411.9h90l-89.9,83.1v-83.1h-.1Z"/>
+      <path class="st0" d="M172.6,859.5h158.9l-158.6,146.6-.2-146.6h0Z"/>
+      <path class="st0" d="M1854.9,471.3h65.1l-64.9,60v-60h-.2Z"/>
+      <path class="st9" d="M1210.8,161.2v87.9l-81.1-87.8h81.1Z"/>
+      <path class="st6" d="M1812.2,879.5v36.5l-33.7-36.5h33.7Z"/>
+      <path class="st0" d="M1422.5,954.6h22.6l-22.5,20.8v-20.8h0Z"/>
+      <path class="st3" d="M621.1,1305.2l-1.9-1029h440.2l-440.2,406.9L0,684.2l621.1,621.1h0Z"/>
+</svg>
