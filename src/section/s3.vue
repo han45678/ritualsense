@@ -48,7 +48,7 @@
     <img class="bg bg2 hidden md:block" src="./s3/bg02.png" alt="bg">
     <img class="bg bg3 hidden md:block" src="./s3/bg03.png" alt="bg">
 
-    <img class="bg_m md:hidden" src="./s3/bg_m.png" alt="bg">
+    <img class="bg_m block md:hidden" src="./s3/bg_m.png" alt="bg">
   </article>
 </template>
 
@@ -131,6 +131,11 @@
           font-weight: 500;
           line-height: 170%;
           letter-spacing: size(1.5);
+          @media screen and (max-width: 767px) {
+            font-size: sizem(15);
+            right: sizem(10);
+            letter-spacing: sizem(1.5);
+          }
         }
 
         img {
