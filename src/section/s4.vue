@@ -1,33 +1,33 @@
 <template>
   <article class="s4 " ref="s4">
     <div class="wrapper">
-      <div class="title">
+      <div data-aos="fade-up" class="title">
         <img src="./s4/title.svg" alt="svg">
       </div>
 
       <div class="s_title block md:hidden">
-        <p class="font-['Noto_sans_tc'] text-[#493024]">
+        <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
           接軌國道1號8號，輕鬆抵達南科生活圈，<br>
           人生第一屋，住近繁華便利首環，<br>
           慢步調府城環，也擁有到高效便捷。
         </p>
       </div>
 
-      <div class="pic big">
+      <div data-aos="fade-up" class="pic big">
         <img src="./s4/1.jpg" alt="pic">
         <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
       </div>
 
       <div class="item item1">
         <div class="text">
-          <p class="hidden md:block font-['Noto_sans_tc'] text-[#493024]">
+          <p data-aos="fade-up" class="hidden md:block font-['Noto_sans_tc'] text-[#493024]">
             接軌國道1號8號，輕鬆抵達南科生活圈，
             人生第一屋，住近繁華便利首環，慢步調府城
             也擁有到高效便捷。
           </p>
-          <img class="text_pic" src="./s4/text_s.svg" alt="text">
+          <img data-aos="fade-up" class="text_pic" src="./s4/text_s.svg" alt="text">
         </div>
-        <div class="pic">
+        <div data-aos="fade-up" class="pic">
           <img src="./s4/2.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
         </div>
@@ -35,13 +35,13 @@
 
       <div class="item item2">
         <div class="text">
-          <img class="s_title" src="./s4/s_title01.svg" alt="s_title">
-          <p class="font-['Noto_sans_tc'] text-[#493024]">
+          <img data-aos="fade-up" class="s_title" src="./s4/s_title01.svg" alt="s_title">
+          <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             暫時放下3C，低碳純淨中遛狗遇小孩，<br>
             周末孩子輕鬆放電，用自然呵護彼此，<br>
             留一席純淨給全家人。</p>
         </div>
-        <div class="pic">
+        <div data-aos="fade-up" class="pic">
           <img src="./s4/3.png" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
         </div>
@@ -49,14 +49,14 @@
 
       <div class="item item3">
         <div class="text">
-          <img class="s_title" src="./s4/s_title02.svg" alt="s_title">
-          <p class="font-['Noto_sans_tc'] text-[#493024]">
+          <img data-aos="fade-up" class="s_title" src="./s4/s_title02.svg" alt="s_title">
+          <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             總計22公頃商業用地+2特色公園，<br>
             比鄰未來富都心，期待每晚邂逅<br>
             繁華不夜城,更能遇見增值夢想。
           </p>
         </div>
-        <div class="pic">
+        <div data-aos="fade-up" class="pic">
           <img src="./s4/4.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
         </div>

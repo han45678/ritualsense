@@ -1,14 +1,14 @@
 <template>
   <article class="s1 relative" id="s1">
     <div class="wrapper">
-      <img class="title hidden md:block" src="./s1/title.svg" alt="title">
-      <img class="title block md:hidden" src="./s1/title_m.svg" alt="title">
+      <img data-aos="fade-up" class="title hidden md:block" src="./s1/title.svg" alt="title">
+      <img data-aos="fade-up" class="title block md:hidden" src="./s1/title_m.svg" alt="title">
 
-      <img class="s_title hidden md:block" src="./s1/s_title.svg" alt="s_title">
-      <img class="s_title block md:hidden" src="./s1/s_title_m.svg" alt="s_title">
+      <img data-aos="fade-up" class="s_title hidden md:block" src="./s1/s_title.svg" alt="s_title">
+      <img data-aos="fade-up" class="s_title block md:hidden" src="./s1/s_title_m.svg" alt="s_title">
 
-      <img class="pic hidden md:block" src="./s1/pic.png" alt="pic">
-      <img class="pic block md:hidden" src="./s1/pic_m.png" alt="pic">
+      <img data-aos="zoom-in" class="pic hidden md:block" src="./s1/pic.png" alt="pic">
+      <img data-aos="zoom-in" class="pic block md:hidden" src="./s1/pic_m.png" alt="pic">
     </div>
   </article>
 </template>
@@ -37,7 +37,21 @@
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url(./s1/bg.png);
+    // background-image: url(./s1/bg.png);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url(./s1/bg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      will-change: transform;
+      transform-origin: center;
+      transform: translateX(0) scale(1.05);
+      animation: sway 10s ease-in-out infinite;
+    }
 
     .title {
       position: absolute;
@@ -77,6 +91,20 @@
         width: sizem(170);
       }
     }
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(-3%) scale(1.05);
+  }
+
+  50% {
+    transform: translateX(3%) scale(1.05);
+  }
+
+  100% {
+    transform: translateX(-3%) scale(1.05);
   }
 }
 </style>

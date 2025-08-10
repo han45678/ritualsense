@@ -3,19 +3,19 @@
     <div class="s5_content">
       <div class="wrapper">
         <div class="title">
-          <img src="./s5/title.svg" alt="title">
+          <img data-aos="fade-up" src="./s5/title.svg" alt="title">
         </div>
-        <div class="pic big">
+        <div data-aos="fade-up" class="pic big">
           <img src="./s5/pic1.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">外觀3D示意圖</p>
         </div>
         <div class="item item1">
-          <div class="pic">
+          <div data-aos="fade-up" class="pic">
             <img src="./s5/pic2.jpg" alt="pic">
             <p class="font-['Noto_sans_tc'] text-[#fff]">外觀3D示意圖</p>
           </div>
           <div class="text">
-            <p class="font-['Noto_sans_tc'] text-[#493024]">
+            <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
               28.3%低公設比，實坪升級減擔首購，<br>
               2-3房青奢享受，方正格局温存幸福，<br>
               雙衛乾濕分離，健康宜居品味再升級。<br>
@@ -27,25 +27,25 @@
         </div>
 
         <div class="item item2">
-          <div class="item_title">
+          <div data-aos="fade-up" class="item_title">
             <img src="./s5/s_title.svg" alt="s_title">
           </div>
           <div class="pic">
-            <div class="pic_item pic1"><img src="./s5/pic3-1.jpg" alt="pic">
+            <div data-aos="fade-up" class="pic_item pic1"><img src="./s5/pic3-1.jpg" alt="pic">
               <p class="font-['Noto_sans_tc'] text-[#fff]">業績實景拍攝</p>
             </div>
-            <div class="pic_item pic2"><img src="./s5/pic3-2.jpg" alt="pic">
+            <div data-aos="fade-up" class="pic_item pic2"><img src="./s5/pic3-2.jpg" alt="pic">
               <p class="font-['Noto_sans_tc'] text-[#fff]">業績實景拍攝</p>
             </div>
-            <div class="pic_item pic3"><img src="./s5/pic3-3.jpg" alt="pic">
+            <div data-aos="fade-up" class="pic_item pic3"><img src="./s5/pic3-3.jpg" alt="pic">
               <p class="font-['Noto_sans_tc'] text-[#fff]">謙福-謙福二 業績外觀3D</p>
             </div>
-            <div class="pic_item pic4"><img src="./s5/pic3-4.jpg" alt="pic">
+            <div data-aos="fade-up" class="pic_item pic4"><img src="./s5/pic3-4.jpg" alt="pic">
               <p class="font-['Noto_sans_tc'] text-[#fff]">謙福-謙福 業績實景拍攝</p>
             </div>
           </div>
           <div class="text">
-            <p class="font-['Noto_sans_tc'] text-[#493024]">
+            <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
               每次選地，都期許您的幸福日漸飽滿；久居安南，更伴隨在地一同成長茁壯。<br>
               延續國家建築金獎一金獅獎的建築品質，【謙福建設·文福建築】團隊秉持<br>
               謙遜與匠心，持續為新世代安南人而築，成就最貼近您需求的貼心品牌。

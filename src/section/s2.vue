@@ -12,7 +12,7 @@ const openMap = ref(false);
 <template>
   <article class="s2">
     <div class="top">
-      <img src="./s2/title_top.svg" alt="title_top">
+      <img data-aos="fade-up" src="./s2/title_top.svg" alt="title_top">
     </div>
     <div :class="['map', { 'active': openMap }]">
       <button @click="openMap = false" class="font-['Noto_sans_tc'] text-[#fff]" />
@@ -25,7 +25,7 @@ const openMap = ref(false);
       <img src="./s2/map_m.jpg" alt="map_m">
     </div>
     <div class="bottom">
-      <p class="font-['Noto_sans_tc'] text-[#493024]">
+      <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
         商60、北外環、明星學區、在地市場⋯<br>
         用一整天的時間，訴說一種安南才有的生活步調<br>
         <br>

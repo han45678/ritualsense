@@ -2,12 +2,12 @@
   <article class="s6" ref="s6">
     <div class="wrapper">
       <div class="text">
-        <img class="title" src="./s6/title.svg" alt="title">
-        <img class="text_pic hidden md:block" src="./s6/text.svg" alt="text">
+        <img data-aos="fade-up" class="title" src="./s6/title.svg" alt="title">
+        <img data-aos="fade-up" class="text_pic hidden md:block" src="./s6/text.svg" alt="text">
       </div>
       <div class="pic">
-        <img class="main_pic" src="./s6/pic.png" alt="pic">
-        <img class="text_pic block md:hidden" src="./s6/text.svg" alt="text">
+        <img data-aos="zoom-in" class="main_pic" src="./s6/pic.png" alt="pic">
+        <img data-aos="fade-up" class="text_pic block md:hidden" src="./s6/text.svg" alt="text">
       </div>
     </div>
   </article>

@@ -3,45 +3,45 @@
     <div class="wrapper">
       <div class="item item1">
         <div class="text">
-          <h3>
+          <h3 data-aos="fade-up">
             <img src="./s3/title01.svg" alt="title">
           </h3>
-          <p class="font-['Noto_sans_tc'] text-[#493024]">
+          <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             步出靜巷，迎接早餐店、小吃攤、<br>
             7-ELEVEN便利生活圈，<br>
             不間斷的繁華，喚醒名為悠閒的味蕾。
           </p>
         </div>
-        <div class="pic pic1">
+        <div data-aos="fade-up" class="pic pic1">
           <img src="./s3/pic01.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
         </div>
-        <div class="pic pic2">
+        <div data-aos="fade-up" class="pic pic2">
           <img src="./s3/pic02.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
         </div>
-        <img class="text_pic" src="./s3/text01.svg" alt="text">
+        <img data-aos="fade-up" class="text_pic" src="./s3/text01.svg" alt="text">
       </div>
       <div class="item item2">
         <div class="text">
-          <h3>
+          <h3 data-aos="fade-up">
             <img src="./s3/title02.svg" alt="title">
           </h3>
-          <p class="font-['Noto_sans_tc'] text-[#493024]">
+          <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             新婚小家庭，不必遠離明星學區，<br>
             求學路上讓孩子不只贏在起跑點，<br>
             更要讓他多睡一點。
           </p>
         </div>
-        <div class="pic pic1">
+        <div data-aos="fade-up" class="pic pic1">
           <img src="./s3/pic03.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
         </div>
-        <div class="pic pic2">
+        <div data-aos="fade-up" class="pic pic2">
           <img src="./s3/pic04.jpg" alt="pic">
           <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
         </div>
-        <img class="text_pic" src="./s3/text02.svg" alt="text">
+        <img data-aos="fade-up" class="text_pic" src="./s3/text02.svg" alt="text">
       </div>
     </div>
     <img class="bg bg1 hidden md:block" src="./s3/bg01.png" alt="bg">
