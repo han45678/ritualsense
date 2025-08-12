@@ -7,9 +7,7 @@
 
       <div class="s_title block md:hidden">
         <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
-          接軌國道1號8號，輕鬆抵達南科生活圈，<br>
-          人生第一屋，住近繁華便利首環，<br>
-          慢步調府城環，也擁有到高效便捷。
+          接軌國道1號8號，輕鬆抵達南科生活圈，人生第一屋，住近繁華便利首環，慢步調府城環，也擁有到高效便捷。
         </p>
       </div>
 
@@ -21,9 +19,7 @@
       <div class="item item1">
         <div class="text">
           <p data-aos="fade-up" class="hidden md:block font-['Noto_sans_tc'] text-[#493024]">
-            接軌國道1號8號，輕鬆抵達南科生活圈，
-            人生第一屋，住近繁華便利首環，慢步調府城
-            也擁有到高效便捷。
+            接軌國道1號8號，輕鬆抵達南科生活圈，人生第一屋，住近繁華便利首環，慢步調府城也擁有到高效便捷。
           </p>
           <img data-aos="fade-up" class="text_pic" src="./s4/text_s.svg" alt="text">
         </div>
@@ -37,9 +33,7 @@
         <div class="text">
           <img data-aos="fade-up" class="s_title" src="./s4/s_title01.svg" alt="s_title">
           <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
-            暫時放下3C，低碳純淨中遛狗遇小孩，<br>
-            周末孩子輕鬆放電，用自然呵護彼此，<br>
-            留一席純淨給全家人。</p>
+            暫時放下3C，低碳純淨中遛狗遛小孩，周末孩子輕鬆放電，用自然呵護彼此，留一席純淨給全家人。</p>
         </div>
         <div data-aos="fade-up" class="pic">
           <img src="./s4/3.jpg" alt="pic">
@@ -51,9 +45,7 @@
         <div class="text">
           <img data-aos="fade-up" class="s_title" src="./s4/s_title03.svg" alt="s_title">
           <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
-            總計22公頃商業用地+2特色公園，<br>
-            比鄰未來富都心，期待每晚邂逅<br>
-            繁華不夜城,更能遇見增值夢想。
+            總計22公頃商業用地+2特色公園，比鄰未來富都心，期待每晚邂逅繁華不夜城，更能遇見增值夢想。
           </p>
         </div>
         <div data-aos="fade-up" class="pic">
@@ -157,6 +149,8 @@
 
       &.item1 {
         margin-top: size(50);
+        align-items:center;
+
 
         @media screen and (max-width: 767px) {
           margin-left: sizem(-30);
@@ -175,7 +169,7 @@
         .text {
           width: 38%;
           order: 2;
-          padding-left: size(60);
+          // padding-left: size(60);
 
           @media screen and (max-width: 767px) {
             width: 52%;
@@ -186,11 +180,13 @@
           }
 
           p {
-            margin-top: size(70);
+            margin:0 0 auto auto;
+          width:  size(500);
           }
 
           .text_pic {
-            margin-top: size(275);
+            margin: size(290) 0 auto auto;
+            display: block;
 
             @media screen and (max-width: 767px) {
               margin-top: 0;
@@ -225,13 +221,17 @@
         }
 
         .text {
-          width: 44%;
-          padding-right: size(60);
+          width:  size(460);
+          //padding-right:;
+          margin: 0 auto auto 0;
 
           @media screen and (max-width: 767px) {
             width: 100%;
             padding-right: 0;
             margin-bottom: sizem(25);
+            p{
+              width:  sizem(260);
+            }
           }
 
           .s_title {
@@ -268,6 +268,12 @@
             width: 100%;
             padding: 0;
             margin-bottom: sizem(25);
+          }
+          p{
+            width:  size(430);
+            @media screen and (max-width: 767px) {
+              width:  sizem(240);
+            }
           }
 
           .s_title {

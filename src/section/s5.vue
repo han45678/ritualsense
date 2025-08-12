@@ -16,12 +16,8 @@
           </div>
           <div class="text">
             <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
-              28.3%低公設比，實坪升級減擔首購，<br>
-              2-3房青奢享受，方正格局温存幸福，<br>
-              雙衛乾濕分離，健康宜居品味再升級。<br>
-              渴望成家，更渴望房子不只是睡覺的地方，<br>
-              從一天的光景，看見一生的幸福，獻給，<br>
-              與文福同樣熱愛生活的年輕人。
+              28.3%低公設比，實坪升級減擔首購，2-3房青奢享受，方正格局溫存幸福，雙衛乾濕分離，健康宜居品味再升級。<br /><br />
+              渴望成家，更渴望房子不只是睡覺的地方，從一天的光景，看見一生的幸福，獻給，與文福同樣熱愛生活的年輕人。
             </p>
           </div>
         </div>
@@ -46,9 +42,7 @@
           </div>
           <div class="text">
             <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
-              每次選地，都期許您的幸福日漸飽滿；久居安南，更伴隨在地一同成長茁壯。<br>
-              延續國家建築金獎一金獅獎的建築品質，【謙福建設·文福建築】團隊秉持<br>
-              謙遜與匠心，持續為新世代安南人而築，成就最貼近您需求的貼心品牌。
+              每次選地，都期許您的幸福日漸飽滿；久居安南，更伴隨在地一同成長茁壯。延續國家建築金獎一金獅獎的建築品質，【謙福建設·文福建築】團隊秉持謙遜與匠心，持續為新世代安南人而築，成就最貼近您需求的貼心品牌。
             </p>
           </div>
         </div>
@@ -193,22 +187,27 @@
           }
 
           .text {
-            width: 42%;
+            
+          width:  size(465);
+          //padding-right:;
+          margin:auto 0 auto auto;
 
             @media screen and (max-width: 767px) {
               width: 100%;
               order: 1;
             }
 
-            p {
+            p {/*
               margin-left: size(120);
-              margin-top: size(235);
+              margin-top: size(235);*/
+              
 
               @media screen and (max-width: 767px) {
+                width: sizem(257);
                 margin-left: 0;
                 margin-top: 0;
                 margin-bottom: sizem(25);
-                text-align: center;
+                //text-align: center;
               }
             }
           }
@@ -278,10 +277,9 @@
           }
 
           .text {
-            margin-top: size(68);
-
+            margin-top: size(68);width:size(900);
             @media screen and (max-width: 767px) {
-              margin-top: sizem(25);
+              margin-top: sizem(25); width:sizem(264);
             }
           }
         }

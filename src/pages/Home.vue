@@ -55,6 +55,9 @@
     }
   }
 }
+.text{
+  text-align: justify;
+}
   .bg-o1{
     position: absolute;
     background: radial-gradient(50% 50% at 50% 50%, #F29600, #F2960000);
