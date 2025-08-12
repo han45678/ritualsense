@@ -519,6 +519,8 @@ const send = () => {
   let pass = true;
   let unfill = [];
   let idx = 0;
+
+  /**/
   if (formData.msg.trim() === "") {
     formData.msg = "無留言";
   }
