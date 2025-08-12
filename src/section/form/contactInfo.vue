@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div class="contact-bg">
     <div class="contact-info mx-auto  flex flex-col items-center justify-between">
       <div class="logo">
         <img src="@/section/s1/logo.svg" alt="" />
@@ -113,9 +113,10 @@
   background-color: #002421;
 }
 
-.bg{
-
+.contact-bg{
   background: linear-gradient(180deg, #E7380D 11.04%, #EA6000 77.8%);
+  padding:size(20) 0;
+  margin:size(100) auto 0 ;
 }
 
 .contact-info-img {
@@ -124,7 +125,7 @@
 }
 
 .contact-info {
-  padding: 5em 0 2.5em 0;
+  padding: 0em 0 2.5em 0;
   position: relative;
   z-index: 50;
   width: size(1000);
@@ -134,12 +135,13 @@
   .logo {
     position: relative;
     width: size(367);
+    min-width: 300px;
     // height: size(172);
     // background-image: url("@/section/s1/logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: size(30) auto 0;
+    margin: size(50) auto  size(30);
 
     img {
       width: 100%;
@@ -163,8 +165,8 @@
     // min-width: 680px;
 
     .contact-item {
-      background: linear-gradient(180deg, #C30D23 0%, #E73820 100%);
-      color: #ccc;
+      background: linear-gradient(180deg, #C30D23, #E73820);
+      color: #fff;
       width: 100%;
       flex: 1;
       padding: 1.1em 0;
@@ -178,8 +180,8 @@
       gap: 1em;
 
       &:hover {
-        background: #bba739;
-        color: #000;
+      background: linear-gradient(180deg, #960011, #C30D23);
+       // color: #000;
 
         // img {
         //   filter: invert(0%) sepia(1%) saturate(4%) hue-rotate(348deg) brightness(99%) contrast(101%);
@@ -199,8 +201,8 @@
     }
 
     &.address {
-      background-color: #eee;
-      border-radius: .6em;
+      background-color: #fff;
+     // border-radius: .6em;
 
       .contact-item {
         &.add {
@@ -270,10 +272,8 @@
     height: sizem(63);
     gap: sizem(1);
     box-shadow: 0 0 sizem(50) rgba(0, 0, 0, 0.501);
-    background: #004933;
-    //background:linear-gradient(180deg, #FF8BF3 , #6D1EDB );
-    //background:linear-gradient(180deg, #f575a6 , #652ccf );
-    // background:linear-gradient(180deg, #b2baff , #781297 );
+      background: linear-gradient(180deg, #C30D23, #E73820);
+    // background: #004933;
 
 
     .contact-item {
@@ -297,6 +297,11 @@
 
     }
   }
+.contact-bg{
+  padding:0 0;
+  margin:sizem(60) auto 0 ;
+}
+
 
   .contact-info {
     width: 100%;
@@ -304,7 +309,7 @@
     // height: sizem(400);
     // border-radius: sizem(68);
     //padding: sizem(0) sizem(0);
-    padding: sizem(80) 0 sizem(80) 0;
+    padding: sizem(80) 0 sizem(30) 0;
     margin-top: sizem(0);
     position: relative;
     justify-content: space-between;
@@ -312,7 +317,8 @@
 
     .logo {
       width: sizem(257);
-      margin: sizem(00) auto sizem(50) auto;
+      min-width: 0;
+      margin: sizem(0) auto sizem(50) auto;
       // margin-bottom: sizem(47);
     }
 

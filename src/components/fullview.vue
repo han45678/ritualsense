@@ -1,6 +1,6 @@
 <template>
   <div class="viewbox" ref="viewbox">
-    <img ref="viewImg" src="@/section/s2/map.jpg" alt="" srcset="">
+    <img ref="viewImg" src="@/section/s2/map.png" alt="" srcset="">
     <div class="mask" v-bind:class="{ hide: swiped }" v-if="$isMobile()">
       <img src="@/components/fullview/finger.svg" alt="" srcset="">
     </div>

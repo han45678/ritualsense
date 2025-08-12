@@ -6,10 +6,12 @@
         <img data-aos="fade-up" class="text_pic hidden md:block" src="./s6/text.svg" alt="text">
       </div>
       <div class="pic">
-        <img data-aos="zoom-in" class="main_pic" src="./s6/pic.png" alt="pic">
+        <img data-aos="zoom-in" class="main_pic" src="./s6/pic.svg" alt="pic">
         <img data-aos="fade-up" class="text_pic block md:hidden" src="./s6/text.svg" alt="text">
       </div>
     </div>
+    <div class="bg-o1 bg1"></div>
+    <div class="bg-o1 bg2"></div>
   </article>
 </template>
 
@@ -17,12 +19,15 @@
 @import '@/assets/style/function.scss';
 
 .s6 {
+  position: relative;overflow: hidden;
   background: linear-gradient(180deg, #E7380D 11.04%, #EA6000 77.8%);
 
   .wrapper {
     display: flex;
     flex-wrap: wrap;
     padding: size(125) 0;
+    position: relative;
+    z-index: 2;
 
     @media screen and (max-width: 767px) {
       padding: sizem(60) sizem(30) sizem(50) sizem(30);
@@ -40,13 +45,12 @@
       }
 
       .title {
-        margin-top: size(150);
-        width: 100%;
-        max-width: size(570);
+        margin-top: size(50);
+        width: size(570);
 
         @media screen and (max-width: 767px) {
           margin-top: 0;
-          max-width: sizem(210);
+          width: sizem(210);
           margin-bottom: sizem(35);
         }
       }
@@ -69,10 +73,10 @@
         width: 100%;
 
         &.main_pic {
-          max-width: size(824);
+          width: size(820);
 
           @media screen and (max-width: 767px) {
-            max-width: 220px;
+          width: sizem(220);
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -84,6 +88,26 @@
           max-width: sizem(320);
         }
       }
+    }
+  }
+  .bg1{
+    left: size(-618);
+    top: size(-836);
+    width: size(1672);
+    @media screen and (max-width: 767px) {
+      left: sizem(-223);
+      top: sizem(-181);
+      width: sizem(481);
+    }
+  }
+  .bg2{
+    right: size(-496);
+    top: size(84);
+    width: size(1672);
+    @media screen and (max-width: 767px) {
+      right: sizem(-147); 
+      top: sizem(139);
+      width: sizem(480);
     }
   }
 }

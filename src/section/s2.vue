@@ -12,17 +12,17 @@ const openMap = ref(false);
 <template>
   <article class="s2">
     <div class="top">
-      <img data-aos="fade-up" src="./s2/title_top.svg" alt="title_top">
+      <img data-aos="fade-up" src="./s2/title_top.svg" alt="安南新核心">
     </div>
     <div :class="['map', { 'active': openMap }]">
       <button @click="openMap = false" class="font-['Noto_sans_tc'] text-[#fff]" />
       <Fullview />
     </div>
     <div class="map_m block md:hidden">
+      <img src="./s2/map.png" alt="map_m">
       <button @click="openMap = true">
         <span class="font-['Noto_sans_tc'] text-[#fff]">點開看詳細</span>
       </button>
-      <img src="./s2/map_m.jpg" alt="map_m">
     </div>
     <div class="bottom">
       <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
@@ -57,6 +57,9 @@ const openMap = ref(false);
   }
 
   .map {
+    
+      button {
+        display: none;}
     @media screen and (max-width: 767px) {
       background: linear-gradient(315deg,
           #F7B400 11.45%,
@@ -87,6 +90,7 @@ const openMap = ref(false);
       }
 
       button {
+        display: flex;
         width: 34px;
         height: 34px;
         border-radius: 100%;
@@ -96,7 +100,6 @@ const openMap = ref(false);
         z-index: 3;
         background-color: #666;
         border-radius: 100%;
-        display: flex;
         justify-content: center;
         align-items: center;
 
@@ -114,6 +117,7 @@ const openMap = ref(false);
   .map_m {
     width: 100%;
     position: relative;
+    background: #000;
 
     button {
       cursor: pointer;
@@ -171,7 +175,7 @@ const openMap = ref(false);
 
 
     img {
-      width: 100%;
+      width: 100%;opacity: .7;
     }
   }
 
@@ -210,11 +214,13 @@ const openMap = ref(false);
 
   .top {
     background-image: url(./s2/top.png);
-    background-position: top;
+    background-position:center top ;
+    background-size: 100% 100%;
 
     @media screen and (max-width: 767px) {
       padding-top: sizem(60);
       padding-bottom: sizem(30);
+    background-size: auto 100%;
     }
   }
 

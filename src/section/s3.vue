@@ -4,7 +4,7 @@
       <div class="item item1">
         <div class="text">
           <h3 data-aos="fade-up">
-            <img src="./s3/title01.svg" alt="title">
+            <img src="./s3/title01.svg" alt="1分鐘 安和路商圈">
           </h3>
           <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             步出靜巷，迎接早餐店、小吃攤、<br>
@@ -14,18 +14,19 @@
         </div>
         <div data-aos="fade-up" class="pic pic1">
           <img src="./s3/pic01.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
+          <p class="caption">情境示意圖</p>
         </div>
         <div data-aos="fade-up" class="pic pic2">
           <img src="./s3/pic02.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
+          <p class="caption">情境示意圖</p>
         </div>
-        <img data-aos="fade-up" class="text_pic" src="./s3/text01.svg" alt="text">
+      <!--  <img data-aos="fade-up" class="text_pic" src="./s3/text01.svg" alt="text"> --> 
+        <div class="en"><img src="./s3/en.svg" alt="bg"></div>
       </div>
       <div class="item item2">
         <div class="text">
           <h3 data-aos="fade-up">
-            <img src="./s3/title02.svg" alt="title">
+            <img src="./s3/title02.svg" alt="5分鐘 海佃國小、海佃國中">
           </h3>
           <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             新婚小家庭，不必遠離明星學區，<br>
@@ -35,20 +36,25 @@
         </div>
         <div data-aos="fade-up" class="pic pic1">
           <img src="./s3/pic03.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
+          <p class="caption">環境實景拍攝</p>
         </div>
         <div data-aos="fade-up" class="pic pic2">
           <img src="./s3/pic04.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
+          <p class="caption">環境實景拍攝</p>
         </div>
         <img data-aos="fade-up" class="text_pic" src="./s3/text02.svg" alt="text">
       </div>
     </div>
+    <div class="bg-o1 bg1"></div>
+    <div class="bg-o1 bg2"></div>
+    <div class="bg-o2 bg3"></div>
+    <div class="bg-o2 bg4"></div>
+    <!--  
     <img class="bg bg1 hidden md:block" src="./s3/bg01.png" alt="bg">
     <img class="bg bg2 hidden md:block" src="./s3/bg02.png" alt="bg">
     <img class="bg bg3 hidden md:block" src="./s3/bg03.png" alt="bg">
-
     <img class="bg_m block md:hidden" src="./s3/bg_m.png" alt="bg">
+-->
   </article>
 </template>
 
@@ -58,7 +64,7 @@
 .s3 {
   padding-top: size(205);
   padding-bottom: size(225);
-  background-image: url(./s3/bg.jpg);
+ // background-image: url(./s3/bg.jpg);
   position: relative;
 
   .wrapper {
@@ -66,7 +72,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     .item {
       display: flex;
@@ -95,11 +101,12 @@
           }
 
           img {
-            width: 100%;
-            max-width: size(458);
+            width: size(688);
+          //  width: 100%;
+          //  max-width: size(458);
 
             @media screen and (max-width: 767px) {
-              max-width: sizem(206);
+              width: sizem(210);
             }
           }
         }
@@ -108,12 +115,11 @@
           font-weight: 500;
           line-height: 1.7;
           font-size: size(24);
-          letter-spacing: size(2.4);
+          letter-spacing: 0.06em;
 
           @media screen and (max-width: 767px) {
             font-size: sizem(14);
-            letter-spacing: sizem(0.7);
-            margin-bottom: sizem(20);
+            margin-bottom: 0;
           }
         }
       }
@@ -122,32 +128,17 @@
         width: 100%;
         position: relative;
 
-        p {
-          position: absolute;
-          bottom: 0;
-          right: size(10);
-          text-align: right;
-          font-size: size(15);
-          font-weight: 500;
-          line-height: 170%;
-          letter-spacing: size(1.5);
-          @media screen and (max-width: 767px) {
-            font-size: sizem(15);
-            right: sizem(10);
-            letter-spacing: sizem(1.5);
-          }
-        }
-
         img {
           width: 100%;
         }
 
         &.pic1 {
-          width: 62%;
+          width: 62%;margin-top:  size(200);
 
           @media screen and (max-width: 767px) {
             max-width: sizem(215);
             margin-left: auto;
+            margin-top:  sizem(20);
           }
         }
 
@@ -170,15 +161,24 @@
 
       &.item1 {
         margin-bottom: size(120);
+        @media screen and (max-width: 767px) {
+          margin-bottom: sizem(130);
+        }
+        .en {
+          position: relative;
+          width: size(758);
+          margin:size(60) 0 auto auto ;
+          right: size(-190);
+          img{width: 100%;}
 
-        .text_pic {
-          margin: 0;
-          width: 170px;
-          transform: rotate(90deg);
-          transform-origin: bottom right;
-          position: absolute;
-          bottom: 0;
-          right: 30px;
+          @media screen and (max-width: 767px) {
+            position: absolute;
+            bottom: sizem(0);
+            right: sizem(50);
+            width: sizem(170);
+            img{transform: rotate(90deg);
+            transform-origin: 100% 100%;}
+          }
         }
       }
 
@@ -209,44 +209,61 @@
           position: absolute;
           bottom: 0;
           left: 0;
+          width: size(30);
           @media screen and (max-width: 767px) {
             width: sizem(11);
             left: sizem(-30);
           }
         }
       }
+      
+    }
+  }
+  
+  .bg1{
+    right: size(-1537);
+    top: size(-836);
+    width: size(2317);
+    opacity: .4;
+    @media screen and (max-width: 767px) {
+      right: sizem(-394);
+      top: sizem(-140);
+      width: sizem(611);
+    }
+  }
+  .bg2{
+    left: size(-719);
+    top: size(587);
+    width: size(2125);
+    opacity: .4;
+    @media screen and (max-width: 767px) {
+      left: sizem(-221);
+      top: sizem(186);
+      width: sizem(470);
+    }
+  }
+  .bg3{
+    background:linear-gradient(315deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    left: size(-1130);
+    top: size(988);
+    width: size(2250);
+    @media screen and (max-width: 767px) {
+      left: sizem(-275);
+      top: sizem(373);
+      width: sizem(587);
+    }
+  }
+  .bg4{
+    background:linear-gradient(135deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    right: size(-918);
+    top: size(2350);
+    width: size(2167);
+    @media screen and (max-width: 767px) {
+      right: sizem(-260);
+      top:sizem(840);
+      width: sizem(560);
     }
   }
 
-  .bg {
-    position: absolute;
-
-    &.bg1 {
-      right: 0;
-      top: 0;
-      width: size(780);
-    }
-
-    &.bg2 {
-      left: size(-700);
-      top: size(585);
-      width: size(1400);
-    }
-
-
-    &.bg3 {
-      right: size(-625);
-      top: size(2725);
-      width: size(1250);
-    }
-  }
-
-  .bg_m{
-    position: absolute;
-    width: siezm(1044);
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 </style>

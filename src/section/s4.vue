@@ -15,7 +15,7 @@
 
       <div data-aos="fade-up" class="pic big">
         <img src="./s4/1.jpg" alt="pic">
-        <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
+        <p class="caption">環境實景拍攝</p>
       </div>
 
       <div class="item item1">
@@ -29,7 +29,7 @@
         </div>
         <div data-aos="fade-up" class="pic">
           <img src="./s4/2.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
+          <p class="caption">情境示意圖</p>
         </div>
       </div>
 
@@ -42,14 +42,14 @@
             留一席純淨給全家人。</p>
         </div>
         <div data-aos="fade-up" class="pic">
-          <img src="./s4/3.png" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">情境示意圖</p>
+          <img src="./s4/3.jpg" alt="pic">
+          <p class="caption">環境實景拍攝</p>
         </div>
       </div>
 
       <div class="item item3">
         <div class="text">
-          <img data-aos="fade-up" class="s_title" src="./s4/s_title02.svg" alt="s_title">
+          <img data-aos="fade-up" class="s_title" src="./s4/s_title03.svg" alt="s_title">
           <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
             總計22公頃商業用地+2特色公園，<br>
             比鄰未來富都心，期待每晚邂逅<br>
@@ -58,10 +58,16 @@
         </div>
         <div data-aos="fade-up" class="pic">
           <img src="./s4/4.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">環境實景拍攝</p>
+          <p class="caption">環境實景拍攝</p>
         </div>
       </div>
     </div>
+    <div class="bg-o1 bg1"></div>
+    <div class="bg-o1 bg2"></div>
+    <div class="bg-o1 bg3"></div>
+    <div class="bg-o1 bg4"></div>
+    <div class="bg-o2 bg5"></div>
+    <div class="bg-o2 bg6"></div>
   </article>
 </template>
 
@@ -70,15 +76,16 @@
 
 .s4 {
   background: #EA6000;
-  background-image: url(./s4/bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+ // background-image: url(./s4/bg.png);
 
   @media screen and (max-width: 767px) {
-    background-image: url(./s4/bg_m.png);
+  //  background-image: url(./s4/bg_m.png);
   }
 
   .wrapper {
+    position: relative;
+    z-index: 2;
     margin-left: size(190);
     margin-right: size(190);
     padding-bottom: size(250);
@@ -128,23 +135,6 @@
       &.big {
         @media screen and (max-width: 767px) {
           margin-bottom: sizem(25);
-        }
-      }
-
-      p {
-        position: absolute;
-        bottom: 0;
-        right: size(10);
-        text-align: right;
-        font-size: size(15);
-        font-weight: 500;
-        line-height: 1.7;
-        letter-spacing: size(1.5);
-
-        @media screen and (max-width: 767px) {
-          font-size: sizem(10);
-          right: sizem(10);
-          letter-spacing: sizem(1.5);
         }
       }
     }
@@ -200,7 +190,7 @@
           }
 
           .text_pic {
-            margin-top: size(360);
+            margin-top: size(275);
 
             @media screen and (max-width: 767px) {
               margin-top: 0;
@@ -213,16 +203,20 @@
 
       &.item2 {
         margin-top: size(205);
+        @media screen and (max-width: 767px) {
+          margin-top: sizem(110);
+        }
 
         .pic {
-          width: 56%;
+          width: calc(56% + #{size(190)});
+          margin-right: size(-190);
 
           @media screen and (max-width: 767px) {
             width: 100%;
           }
 
           img {
-            width: calc(100% + size(190));
+            width:100%;
 
             @media screen and (max-width: 767px) {
               width: 100%;
@@ -286,6 +280,68 @@
           }
         }
       }
+    }
+  }
+  .bg1{
+    right: size(-1072);
+    top: size(-800);
+    width: size(2360);
+    @media screen and (max-width: 767px) {
+      right: sizem(-250);
+      top: sizem(-106);
+      width: sizem(500);
+    }
+  }
+  .bg2 {
+    left: size(-740);
+    top: size(240);
+    width: size(2360);
+    @media screen and (max-width: 767px) {
+      left : sizem(-168);
+      top: sizem(159);
+      width: sizem(500);
+    }
+  }
+  .bg3 {
+    right: size(-755);
+    top: size(1280);
+    width: size(2070);
+    @media screen and (max-width: 767px) {
+      right: sizem(-182);
+      top: sizem(384);
+      width: sizem(439);
+    }
+  }
+  .bg4 {
+    left: size(-1109);
+    top: size(2600);
+    width: size(2070);
+    @media screen and (max-width: 767px) {
+      left : sizem(-263);
+      top: sizem(740);
+      width: sizem(568);
+    }
+  }
+  .bg5 {
+    background:linear-gradient(45deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    right: size(-282);
+    top: size(1925);
+    width: size(1500);
+    @media screen and (max-width: 767px) {
+      right : sizem(-530);
+      top: sizem(660);
+      width: sizem(681);
+    }
+  }
+  .bg6 {
+    background:linear-gradient(225deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    left: size(-250);
+    top: size(3050);
+    width: size(1400);
+    @media screen and (max-width: 767px) {
+      left:sizem(-269);
+      top: sizem(1130);
+      width: sizem(681);
     }
   }
 }

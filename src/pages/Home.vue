@@ -9,7 +9,7 @@
     <img class="w-32" src="//h35.banner.tw/img//loading_w.gif" alt="loading" srcset="">
   </div>
   <!-- loading end -->
-  <Nav />
+  <!-- <Nav /> -->
   <div class="home overflow-hidden bg-[#fffff6] font-['Noto_Sans_TC',sans-serif]">
     <S1 />
     <S2 />
@@ -41,7 +41,30 @@
 .fade-leave-to {
   opacity: 0;
 }
-
+.home{
+  background-color: #fff;
+  &::before {
+    content: "";
+    position: fixed;
+    background-image: url(@/section/s1/bg.jpg);
+    background-size: auto;
+    background-position: center;
+    top: 0;left: 0;right: 0;bottom: 0;
+    @media screen and (max-width: 767px) {
+      background-size: sizem(450) auto;
+    }
+  }
+}
+  .bg-o1{
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #F29600, #F2960000);
+    aspect-ratio: 1/1;
+  }
+  .bg-o2{
+    position: absolute;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
 img {
   display: inline;
   max-width: unset;
@@ -50,14 +73,17 @@ img {
 }
 
 .caption {
-  @apply absolute;
-  right: 1em;
-  bottom: .5em;
+  @apply absolute font-['Noto_sans_tc'];
+  bottom: .1em;
+  right: .5em;
   font-weight: 400;
   font-size: size(15);
   color: #FFF;
   z-index: 3;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 .2em #0009;
+  @media screen and (max-width: 767px) {
+    font-size: sizem(11);
+  }
 }
 
 
@@ -149,9 +175,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .caption {
-    font-size: sizem(12);
-  }
 
   .txt {
     line-height: 1.6;
@@ -220,7 +243,7 @@ import S4 from "@/section/s4.vue"
 import S5 from "@/section/s5.vue"
 import S6 from "@/section/s6.vue"
 import Order from "@/section/order.vue"
-import Nav from "@/layout/navbar.vue"
+// import Nav from "@/layout/navbar.vue"
 import { onMounted, ref } from "vue"
 
 import AOS from 'aos';

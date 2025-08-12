@@ -1,14 +1,10 @@
 <template>
   <article class="s1 relative" id="s1">
     <div class="wrapper">
-      <img data-aos="fade-up" class="title hidden md:block" src="./s1/title.svg" alt="title">
-      <img data-aos="fade-up" class="title block md:hidden" src="./s1/title_m.svg" alt="title">
-
-      <img data-aos="fade-up" class="s_title hidden md:block" src="./s1/s_title.svg" alt="s_title">
-      <img data-aos="fade-up" class="s_title block md:hidden" src="./s1/s_title_m.svg" alt="s_title">
-
-      <img data-aos="zoom-in" class="pic hidden md:block" src="./s1/pic.png" alt="pic">
-      <img data-aos="zoom-in" class="pic block md:hidden" src="./s1/pic_m.png" alt="pic">
+      <img data-aos="fade-up" class="title" src="./s1/title.svg" alt="title">
+      <img data-aos="fade-up" data-aos-delay="200" class="logo" src="./s1/slogo.svg" alt="logo">
+      <img data-aos="fade-up" data-aos-delay="400" class="en" src="./s1/en.svg" alt="en">
+      <img data-aos="zoom-in" class="pic" src="./s1/pic.svg" alt="pic">
     </div>
   </article>
 </template>
@@ -17,17 +13,14 @@
 @import '@/assets/style/function.scss';
 
 .s1 {
-  min-height: size(1178);
-  max-height: size(1178);
   height: 100vh;
-  background-color: #fff;
-  background-image: url(./s1/bg.jpg);
+  min-height: size(900);
+  max-height: size(1178);
 
   @media screen and (max-width: 767px) {
     height: sizem(500);
     min-height: sizem(500);
     max-height: sizem(500);
-    background-image: url(./s1/bg_m.png);
   }
 
   .wrapper {
@@ -36,9 +29,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-size: cover;
-    // background-image: url(./s1/bg.png);
-
     &::before {
       content: "";
       position: absolute;
@@ -48,14 +38,15 @@
       background-position: center;
       background-repeat: no-repeat;
       will-change: transform;
-      transform-origin: center;
-      transform: translateX(0) scale(1.05);
-      animation: sway 10s ease-in-out infinite;
+      transform-origin:100% 0;
+      transform: scaleX(1.1);
+      animation: sway 5s ease-in-out alternate infinite;
     }
 
     .title {
       position: absolute;
       top: size(155);
+      top: calc(50% + #{size(155 - 1178 * .5)});      
       left: size(218);
       width: size(454);
 
@@ -65,10 +56,10 @@
         width: sizem(140);
       }
     }
-
-    .s_title {
+    .logo {
       position: absolute;
       top: size(629);
+      top: calc(50% + #{size(629 - 1178 * .5)});      
       left: size(221);
       width: size(437);
 
@@ -78,33 +69,41 @@
         width: sizem(135);
       }
     }
+    .en {
+      position: absolute;
+      top: size(824);
+      top: calc(50% + #{size(824 - 1178 * .5)});      
+      left: size(221);
+      width: size(437);
+
+      @media screen and (max-width: 767px) {
+        top: sizem(384);
+        left: sizem(35);
+        width: sizem(135);
+      }
+    }
 
     .pic {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: size(1000);
+      top: size(125);
+      top: calc(50% + #{size(125 - 1178 * .5)});      
+      right: size(-410);
+      width: size(1410);
+      color: #00000012;
 
       @media screen and (max-width: 767px) {
-        bottom: sizem(80);
-        right: 0;
-        width: sizem(170);
+        top: sizem(127);
+        right: sizem(-122);
+        width: sizem(291);
       }
     }
   }
 }
 
 @keyframes sway {
-  0% {
-    transform: translateX(-3%) scale(1.05);
+  to {
+    transform:  scaleX(1);
   }
 
-  50% {
-    transform: translateX(3%) scale(1.05);
-  }
-
-  100% {
-    transform: translateX(-3%) scale(1.05);
-  }
 }
 </style>

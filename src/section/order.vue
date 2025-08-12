@@ -1,17 +1,9 @@
 <template>
   <div id="order" class="order relative text-center">
     <div class="order-section">
-      <div class="order-title text-center" v-if="info.order.title" v-html="info.order.title"></div>
+      <div class="order-title text-center font-['Noto_Serif_tc']" v-if="info.order.title" v-html="info.order.title"></div>
       <div class="order-subTitle text-center" v-if="info.order.subTitle"
         v-html="$isMobile() && info.order.subTitle_mo ? info.order.subTitle_mo : info.order.subTitle"></div>
-      <!-- 
-      <img class="order-title-img" src="./form/titlem.svg" alt="" srcset="" v-if="isMobile">
-      <img class="order-title-img" src="./form/title.svg" alt="" srcset="" v-else> -->
-      <div class="title">
-        <h3 class="font-['Noto_Serif_tc'] text-[#E73820]">預約賞屋</h3>
-        <p class="font-['Noto_sans_tc'] text-[#493024]">歡迎預約，將有專人與您聯絡，我們將竭誠為您服務</p>
-      </div>
-
       <!-- Form -->
       <div class="form mx-auto relative flex justify-center">
         <div class="left h-full flex flex-col justify-between items-center">
@@ -96,10 +88,10 @@
 
 
     <!-- Map -->
-    <!-- <Map v-if="info.address" /> -->
+    <!--  --><Map v-if="info.address" />
 
     <!-- HouseInfo -->
-    <!-- <HouseInfo /> -->
+    <!--  --><HouseInfo />
   </div>
 </template>
 
@@ -107,25 +99,10 @@
 @import "@/assets/style/function.scss";
 
 .order {
-  background-image: url(./form/bg.jpg);
+ // background-image: url(./form/bg.jpg);
 }
 
-.title {
-  margin-top: size(70);
 
-  h3 {
-    text-align: center;
-    font-size: size(54);
-    font-weight: 600;
-  }
-
-  p {
-    text-align: center;
-    font-size: size(22);
-    font-weight: 400;
-    line-height: 2.28;
-  }
-}
 
 .order-section {
   position: relative;
@@ -142,7 +119,7 @@
   }
 
 }
-
+/*
 .footer {
   width: 100%;
   height: 40px;
@@ -153,6 +130,7 @@
   align-items: center;
   font-size: 18px;
 }
+  */
 
 .order {
   width: 100%;
@@ -166,15 +144,10 @@
 
 
   .order-title {
-    font-size: size(40);
-    font-weight: 400;
-    color: #A30C24;
+    font-size: size(54);
+    font-weight: 800;
+    color: #E73820;
     padding-top: 1.5em;
-
-    //filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8))
-    .line {
-      width: size(439);
-    }
   }
 
   .order-title-img {
@@ -183,8 +156,8 @@
   }
 
   .order-subTitle {
-    font-size: size(17);
-    // color: #fff;
+    font-size: size(22);
+    color: #493024;
     padding-top: .8em;
     letter-spacing: .1em;
     //font-weight: 500;filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8))
@@ -344,7 +317,7 @@
 
 
   .control {
-    font-size: size(16);
+    font-size:15px;
     color: #000;
     position: relative;
   }

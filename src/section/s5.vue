@@ -7,12 +7,12 @@
         </div>
         <div data-aos="fade-up" class="pic big">
           <img src="./s5/pic1.jpg" alt="pic">
-          <p class="font-['Noto_sans_tc'] text-[#fff]">外觀3D示意圖</p>
+          <p class="caption">外觀3D示意圖</p>
         </div>
         <div class="item item1">
           <div data-aos="fade-up" class="pic">
             <img src="./s5/pic2.jpg" alt="pic">
-            <p class="font-['Noto_sans_tc'] text-[#fff]">外觀3D示意圖</p>
+            <p class="caption">外觀3D示意圖</p>
           </div>
           <div class="text">
             <p data-aos="fade-up" class="font-['Noto_sans_tc'] text-[#493024]">
@@ -32,16 +32,16 @@
           </div>
           <div class="pic">
             <div data-aos="fade-up" class="pic_item pic1"><img src="./s5/pic3-1.jpg" alt="pic">
-              <p class="font-['Noto_sans_tc'] text-[#fff]">業績實景拍攝</p>
+              <p class="caption">業績實景拍攝</p>
             </div>
             <div data-aos="fade-up" class="pic_item pic2"><img src="./s5/pic3-2.jpg" alt="pic">
-              <p class="font-['Noto_sans_tc'] text-[#fff]">業績實景拍攝</p>
+              <p class="caption">業績實景拍攝</p>
             </div>
             <div data-aos="fade-up" class="pic_item pic3"><img src="./s5/pic3-3.jpg" alt="pic">
-              <p class="font-['Noto_sans_tc'] text-[#fff]">謙福-謙福二 業績外觀3D</p>
+              <p class="caption">謙福-謙福二 業績外觀3D</p>
             </div>
             <div data-aos="fade-up" class="pic_item pic4"><img src="./s5/pic3-4.jpg" alt="pic">
-              <p class="font-['Noto_sans_tc'] text-[#fff]">謙福-謙福 業績實景拍攝</p>
+              <p class="caption">謙福-謙福 業績實景拍攝</p>
             </div>
           </div>
           <div class="text">
@@ -53,6 +53,10 @@
           </div>
         </div>
       </div>
+    <div class="bg-o1 bg1"></div>
+    <div class="bg-o1 bg2"></div>
+    <div class="bg-o2 bg3"></div>
+    <div class="bg-o2 bg4"></div>
     </div>
   </article>
 </template>
@@ -62,13 +66,6 @@
 
 .s5 {
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./s5/bg_pic01.png);
-
-  @media screen and (max-width: 767px) {
-    background-image: url(./s5/bg_pic01_m.png);
-  }
 
   &::after {
     content: "";
@@ -93,7 +90,7 @@
 
     &::after {
       content: "";
-      background-image: url(./s5/bg.jpg);
+     // background-image: url(./s5/bg.jpg);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -104,7 +101,7 @@
 
     .wrapper {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       margin-left: size(190);
       margin-right: size(190);
       padding-bottom: size(360);
@@ -147,22 +144,6 @@
           width: 100%;
         }
 
-        p {
-          position: absolute;
-          text-align: right;
-          font-size: size(15);
-          font-weight: 500;
-          line-height: 1.7;
-          right: size(10);
-          bottom: 0;
-          letter-spacing: size(1.5);
-
-          @media screen and (max-width: 767px) {
-            font-size: sizem(10);
-            right: sizem(10);
-            letter-spacing: sizem(1.5);
-          }
-        }
       }
 
       .item {
@@ -266,13 +247,9 @@
             .pic_item {
               position: relative;
 
-              p {
-                right: unset;
-                left: size(10);
-
-                @media screen and (max-width: 767px) {
-                  left: sizem(10);
-                }
+              .caption {
+                right: auto;
+                left:.5em;
               }
 
               img {
@@ -310,6 +287,50 @@
         }
 
       }
+    }
+  }
+  .bg1{
+    right: size(-1679);
+    top: size(-756);
+    width: size(2070);
+    @media screen and (max-width: 767px) {
+      right: sizem(-220);
+      top: sizem(-269);
+      width: sizem(460);
+      opacity: .4;
+    }
+  }
+  .bg2 {
+    left: size(-1236);
+    top: size(519);
+    width: size(2070);
+    opacity: .4;
+    @media screen and (max-width: 767px) {
+      left : sizem(-155);
+      top: sizem(241);
+      width: sizem(460);
+    }
+  }
+  .bg3 {
+    background:linear-gradient(45deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    right: size(-835);
+    top: size(785);
+    width: size(1949);
+    @media screen and (max-width: 767px) {
+      right: sizem(-339);
+      top: sizem(72);
+      width: sizem(703);
+    }
+  }
+  .bg4 {
+    background:linear-gradient(225deg, #F7B400 11.44%, rgba(247, 180, 0, 0.70) 19.05%, rgba(247, 180, 0, 0.45) 26.3%, rgba(247, 180, 0, 0.26) 32.52%, rgba(247, 180, 0, 0.12) 38.39%, rgba(247, 180, 0, 0.03) 42.89%, rgba(247, 180, 0, 0.00) 45.99%);
+    left: size(-624);
+    top: size(2138);
+    width: size(1948);
+    @media screen and (max-width: 767px) {
+      left : sizem(-351);
+      top: sizem(673);
+      width: sizem(703);
     }
   }
 }
