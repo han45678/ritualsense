@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as n}from"./index.fb13b949.js";const t={name:"404",components:{},methods:{}},o={class:"bg"};function r(c,d,_,s,i,g){return n(),a("div",o)}var m=e(t,[["render",r],["__scopeId","data-v-9ed04ff4"]]);export{m as default};
